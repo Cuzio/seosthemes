@@ -1,0 +1,23 @@
+.parrallex {
+  background-image: url("../images/person2.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+}
+.parral {
+  padding-top: 16rem;
+  color: white;
+  font-family: "Sora", sans-serif;
+  /* font-weight: 700; */
+}
+.parral h1 {
+  font-size: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .parral h1 {
+    font-size: 30px;
+  }
+  .parrallex {
+    height: 80vh;
+  }
+}

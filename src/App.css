@@ -1,0 +1,15 @@
+.arrow {
+  cursor: pointer;
+  background-color: #680303;
+  /* position: fixed; */
+  /* top: 0; */
+  /* width: 100vw; */
+  font-family: "Sora", sans-serif;
+}
+.arrow:hover {
+  background-color: #fd1f1f;
+}
+.arrow h2 {
+  font-weight: 700;
+  margin: 0.5rem;
+}

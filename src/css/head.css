@@ -1,0 +1,37 @@
+.contain {
+  background-color: black;
+  color: white;
+  /* height: 50px; */
+  /* margin-top: 2.2rem; */
+  padding: 0 4rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.first {
+  flex-wrap: wrap;
+}
+input {
+  height: 25px;
+  background-color: gray;
+  color: white;
+  width: 120px;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.line {
+  border-left: 1px solid blue;
+  height: 25px;
+  margin-left: 1rem;
+}
+.cart {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .cart {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,96 @@
+.movie {
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid red; */
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+.folder {
+  height: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+.folder:hover {
+  color: white;
+}
+.clothe {
+  width: 20px;
+  height: 50px;
+  cursor: pointer;
+}
+.product {
+  margin-bottom: 0.7rem;
+}
+.product h4 {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  margin: 0;
+  /* border: 2px solid red; */
+}
+.product h4:hover {
+  color: white;
+}
+.product p {
+  color: white;
+  margin: 0;
+  font-size: 15px;
+}
+.album {
+  margin: 2rem 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+.second {
+  background-color: black;
+  height: 25vh;
+}
+.social {
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.face {
+  border: 1px solid gray;
+  padding: 8px 10px;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.face:hover {
+  background-color: grey;
+  color: white;
+}
+.custom {
+  font-size: 14px;
+}
+.custom span {
+  font-weight: bold;
+  cursor: pointer;
+}
+.custom span:hover {
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .movies {
+    /* display: grid; */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0rem;
+    margin-left: 2.5rem;
+    width: 280px;
+    height: 180px;
+    /* border: 2px solid red; */
+  }
+  .movie {
+    width: 60px;
+    height: 50px;
+    /* border: 2px solid red; */
+  }
+  .foot {
+    text-align: center;
+  }
+}

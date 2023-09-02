@@ -1,0 +1,22 @@
+.come {
+  display: flex;
+}
+.side-left {
+  width: 5%;
+}
+.side-right {
+  width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .come {
+    display: flex;
+    flex-flow: column;
+  }
+  .side-left {
+    order: 2;
+  }
+  .side-right {
+    order: 1;
+  }
+}

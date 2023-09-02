@@ -1,0 +1,40 @@
+.testimon h1 {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+}
+.testimon p {
+  font-family: "DM Sans", sans-serif;
+}
+.boo {
+  /* border: 2px solid red; */
+  width: 230px;
+  border-radius: 50%;
+}
+.test {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+.person {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+.more {
+  /* border: 2px solid blue; */
+  border-radius: 500px;
+  border: 10px solid rgb(197, 195, 195);
+  margin: 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .test {
+    margin-left: 0;
+  }
+  .more {
+    margin-bottom: 2rem;
+  }
+}

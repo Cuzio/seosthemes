@@ -1,0 +1,65 @@
+.model {
+  width: 50%;
+  cursor: pointer;
+}
+.model:hover {
+  opacity: 80%;
+}
+.text {
+  width: 50%;
+  margin: 0 2rem;
+  font-family: "DM Sans", sans-serif;
+  color: rgb(20, 20, 63);
+  font-weight: 600;
+}
+.bot {
+  border-radius: 0;
+  background-color: rgb(9, 9, 85);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-family: "DM Sans", sans-serif;
+}
+.bot:hover {
+  background-color: rgb(41, 41, 107);
+  color: white;
+}
+.nov {
+  cursor: pointer;
+  font-weight: 500;
+}
+.nov:hover {
+  color: rgb(9, 9, 85);
+}
+.cont {
+  /* border: 2px solid red; */
+  margin-top: 3rem;
+}
+.cont h2 {
+  cursor: pointer;
+  max-width: 200px;
+  font-family: "Sora", sans-serif;
+  /* border: 2px solid red; */
+}
+.cont h2:hover {
+  color: rgb(9, 9, 85);
+}
+
+@media screen and (max-width: 767px) {
+  .state {
+    display: flex;
+    flex-direction: column;
+  }
+  .model {
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    width: 100%;
+    margin: 1rem 0 0;
+    font-family: "DM Sans", sans-serif;
+  }
+  .cont h2 {
+    font-family: "Sora", sans-serif;
+  }
+}
