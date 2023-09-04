@@ -6,6 +6,15 @@ import { Link } from "react-router-dom";
 import "../css/ninja.css";
 
 const Ninja = () => {
+  const [picture, setPicture] = useState(
+    <img src={ninja1} alt="" className="col-sm-6 pic" />
+  );
+  const ninja = () => {
+    if (picture === <img src={ninja1} alt="" className="col-sm-6 pic" />) {
+      setPicture(<img src={ninja2} alt="" className="col-sm-6 pic" />);
+    }
+  };
+
   const [click, setClick] = useState(0);
   const add = () => {
     if (click < 10) {
@@ -21,7 +30,7 @@ const Ninja = () => {
   return (
     <div className="container my-5">
       <div className="row">
-        <img src={ninja1} alt="" className="col-sm-6 pic" />
+        {picture}
         <div className="col-sm-6">
           <h1 className="ninja-title">Ninja Silhouette</h1>
           <div className="d-flex align-items-center mt-5">
@@ -62,9 +71,9 @@ const Ninja = () => {
           </h4>
         </div>
       </div>
-      <div className="d-flex">
+      <div className="tshirt-product d-flex">
         <img src={ninja1} alt="" />
-        <img src={ninja2} alt="" />
+        <img src={ninja2} alt="" onClick={ninja} />
       </div>
     </div>
   );
