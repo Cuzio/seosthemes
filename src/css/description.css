@@ -48,18 +48,18 @@
 }
 .nice-products-picture {
   /* border: 2px solid red; */
-  width: 400px;
+  width: 300px;
   background-color: gray;
   border-bottom: none;
   border: 1px solid gray;
-  height: 400px;
+  height: 300px;
 }
 .nice-products-price p {
   text-align: center;
   margin: 0;
   border-bottom: none;
   border: 1px solid gray;
-  width: 400px;
+  width: 300px;
   font-size: 18px;
   font-weight: 700;
   color: gray;
@@ -118,6 +118,7 @@
 .review p span {
   font-weight: bolder;
   text-decoration: underline;
+  cursor: pointer;
 }
 .star {
   margin-bottom: 2rem;
