@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.description-review-nav {
+  display: flex;
+  margin: 2rem 0;
+  /* border: 1px solid gray; */
+}
+.description-page {
+  cursor: pointer;
+  color: rgb(58, 58, 119);
+  font-size: 18px;
+  border: 1px gray solid;
+  border-bottom: none;
+  padding: 10px 8px;
+}
+.description-review-nav hr {
+  font-size: 16px;
+  display: inline-block;
+  border: 4px solid red;
+}
+.review-page {
+  background-color: lightgray;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px gray solid;
+  border-bottom: none;
+  padding: 10px 8px;
+}
+.description {
+  margin: 2rem 0;
+}
+.description h1 {
+  color: rgb(48, 47, 47);
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+.description p {
+  color: rgb(58, 58, 119);
+  font-size: 18px;
+}
+.nice-products {
+  margin: 2rem 0;
+}
+.nice-products-picture {
+  /* border: 2px solid red; */
+  width: 400px;
+  background-color: gray;
+  border-bottom: none;
+  border: 1px solid gray;
+  height: 400px;
+}
+.nice-products-price p {
+  text-align: center;
+  margin: 0;
+  border-bottom: none;
+  border: 1px solid gray;
+  width: 400px;
+  font-size: 18px;
+  font-weight: 700;
+  color: gray;
+}
+.dollar {
+  padding: 2rem 0 0;
+  /* border: none; */
+  /* border-bottom: none; */
+  /* border-top: 0; */
+}
+.nice-products h1 {
+  color: rgb(48, 47, 47);
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+.review {
+  display: none;
+  /* border: 2px solid red; */
+}
+.review h1 {
+  color: rgb(48, 47, 47);
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+.review-results {
+  display: flex;
+  margin: 2rem 0;
+}
+.profile-picture {
+  width: 40px;
+  height: 40px;
+}
+.review-result-comment {
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.review-result {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  color: gray;
+  font-size: 14px;
+  /* border: 2px solid red; */
+}
+.review-result-comment h5,
+.review h5,
+.review p {
+  font-size: 18px;
+  color: rgb(58, 58, 119);
+}
+.review p span {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.star {
+  margin-bottom: 2rem;
+}
