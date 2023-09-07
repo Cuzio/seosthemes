@@ -5,6 +5,9 @@
 }
 .related {
   display: flex;
+  flex-wrap: wrap;
+  width: 1150px;
+  /* border: 2px solid red; */
   margin: 2rem 0;
 }
 .new-products {
@@ -67,4 +70,17 @@
 }
 .sale p {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .related {
+    display: grid;
+    width: 100%;
+  }
+  .new-products {
+    margin: 1rem auto;
+  }
+  .sale {
+    left: 17rem;
+  }
 }

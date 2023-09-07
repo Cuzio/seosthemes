@@ -28,7 +28,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -42,7 +42,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -56,7 +56,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -70,7 +70,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -84,7 +84,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -98,7 +98,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -112,7 +112,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">
@@ -126,7 +126,7 @@ const Testimonial = () => {
           className="boo"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-className="custom-tooltip"
+          data-bs-custom-classname="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <div className="more">

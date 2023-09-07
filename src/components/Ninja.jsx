@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ninja1 from "../images/ninja1.jpg";
 import ninja2 from "../images/ninja2.jpg";
 import { BsStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "../css/ninja.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "aos/dist/aos.js";
 
 const Ninja = () => {
-  const [picture, setPicture] = useState(
-    <img src={ninja1} alt="" className="col-sm-6 pic" />
-  );
-  const ninja = () => {
-    if (picture === <img src={ninja1} alt="" className="col-sm-6 pic" />) {
-      setPicture(<img src={ninja2} alt="" className="col-sm-6 pic" />);
-    }
-  };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
 
   const [click, setClick] = useState(0);
   const add = () => {
@@ -27,10 +25,50 @@ const Ninja = () => {
       setClick(click - 1);
     }
   };
+
+  const secondNinja = document.querySelector(".second-ninja-pic");
+  const firstNinja = document.querySelector(".first-ninja-pic");
+  const pic = document.querySelector(".pic");
+
+  const [first, setFirst] = useState(
+    <img src={ninja1} alt="" className="pic" />
+  );
+  const change = () => {
+    setFirst(<img src={ninja2} alt="" className="pic" />);
+    secondNinja.style.opacity = "100%";
+    firstNinja.style.opacity = "60%";
+  };
+  const change1 = () => {
+    setFirst(<img src={ninja1} alt="" className="pic" />);
+    secondNinja.style.opacity = "60%";
+    firstNinja.style.opacity = "100%";
+  };
+
+  const cart = () => {
+    if (click > 0) {
+      setClick(0);
+    }
+  };
   return (
-    <div className="container my-5">
+    <div className="container my-5" data-aos="fade-left">
       <div className="row">
-        {picture}
+        <div className="col-sm-6">
+          {first}
+          <div className="tshirt-product d-flex">
+            <img
+              src={ninja1}
+              alt=""
+              className="first-ninja-pic"
+              onClick={change1}
+            />
+            <img
+              src={ninja2}
+              alt=""
+              className="second-ninja-pic"
+              onClick={change}
+            />
+          </div>
+        </div>
         <div className="col-sm-6">
           <h1 className="ninja-title">Ninja Silhouette</h1>
           <div className="d-flex align-items-center mt-5">
@@ -60,7 +98,9 @@ const Ninja = () => {
                 -
               </button>
             </div>
-            <button className="add-cart">ADD TO CART</button>
+            <button className="add-cart" onClick={cart}>
+              ADD TO CART
+            </button>
           </div>
           <h4 className="sku d-flex">
             SKU: T-SHIRT-NINJA-SILHOUETTE{" "}
@@ -70,10 +110,6 @@ const Ninja = () => {
             </p>{" "}
           </h4>
         </div>
-      </div>
-      <div className="tshirt-product d-flex">
-        <img src={ninja1} alt="" />
-        <img src={ninja2} alt="" onClick={ninja} />
       </div>
     </div>
   );

@@ -33,9 +33,9 @@ const Head = () => {
             <h1 className="mt-3 line"></h1>
           </div>
           <div className="d-flex justify-evenly align-items-center mx-1 px-1 text-center">
-            <button type="button" class="btn position-relative">
+            <button type="button" className="btn position-relative">
               <BsFillCartFill className="cart" />
-              <span class="num position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              <span className="num position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 0<span class="visually-hidden">unread messages</span>
               </span>
             </button>

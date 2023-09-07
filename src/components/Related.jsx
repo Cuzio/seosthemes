@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
-import shirt1 from "../images/tshirt1.jpg";
+import wooninja from "../images/wooninja.jpg";
+import woologo from "../images/woologo.jpg";
+import premium from "../images/premium.jpg";
+import patient from "../images/patient.jpg";
 import { BsEyeFill, BsFillStarFill } from "react-icons/bs";
 import "../css/related.css";
 import "../css/description.css";
@@ -60,7 +63,7 @@ const Related = () => {
             <h4>WOO NINJA</h4>
           </div>
           <img
-            src={shirt1}
+            src={wooninja}
             alt=""
             className="new-products-image"
             onMouseEnter={woo}
@@ -86,7 +89,7 @@ const Related = () => {
             <p>Sale!</p>
           </div>
           <img
-            src={shirt1}
+            src={woologo}
             alt=""
             className="new-products-image"
             onMouseEnter={woo1}
@@ -106,12 +109,13 @@ const Related = () => {
             </div>
           </div>
         </div>
+
         <div className="new-products">
           <div className="premium" data-aos="flip-left">
             <h4>PREMIUN QUALITY</h4>
           </div>
           <img
-            src={shirt1}
+            src={premium}
             alt=""
             className="new-products-image"
             onMouseEnter={woo2}
@@ -128,12 +132,13 @@ const Related = () => {
             </div>
           </div>
         </div>
+
         <div className="new-products">
           <div className="patient" data-aos="flip-left">
             <h4>PATIENT NINJA</h4>
           </div>
           <img
-            src={shirt1}
+            src={patient}
             alt=""
             className="new-products-image"
             onMouseEnter={woo3}

@@ -10,12 +10,13 @@ const SecondCarousel = () => {
   return (
     <div>
       <div className="gallery">
+        <h1>Recent Post Slider</h1>
         <div className="gallery_item">
-          <img src={model1} class="gallery_image" alt="Image 1" />
-          <img src={model2} class="gallery_image" alt="Image 2" />
-          <img src={model3} class="gallery_image" alt="Image 3" />
-          <img src={model4} class="gallery_image" alt="Image 4" />
-          <img src={model5} class="gallery_image" alt="Image 5" />
+          <img src={model1} className="gallery_image" alt="Image 1" />
+          <img src={model2} className="gallery_image" alt="Image 2" />
+          <img src={model3} className="gallery_image" alt="Image 3" />
+          <img src={model4} className="gallery_image" alt="Image 4" />
+          <img src={model5} className="gallery_image" alt="Image 5" />
         </div>
       </div>
     </div>

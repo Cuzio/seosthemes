@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contact-cover {
+  background-image: url("../images/gala.jpg");
+  height: 100vh;
+  padding-top: 6rem;
+}
+.contactUs {
+  width: 40%;
+  margin: 0rem auto;
+  /* border: 2px solid red; */
+}
+.contactUs h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+.contact-form {
+  display: grid;
+  margin-top: 2rem;
+}
+.contact-name,
+.contact-email,
+.contact-message,
+.contact-subject,
+.contact-button {
+  width: 50%;
+  margin: 0.5rem auto;
+  border: none;
+}
+.contact-name,
+.contact-email,
+.contact-subject,
+.contact-button {
+  height: 40px;
+}
+.contact-name,
+.contact-email,
+.contact-subject {
+  background-color: white;
+}
+.contact-button {
+  background-color: rgb(67, 67, 236);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.spaceShip {
+  /* border: 2px solid red; */
+  font-size: 70px;
+  margin: 1rem auto;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .contactUs {
+    width: 100%;
+  }
+  .contact-name,
+  .contact-email,
+  .contact-message,
+  .contact-subject,
+  .contact-button {
+    width: 80%;
+  }
+  .contactUs h1 {
+    font-size: 40px;
+    margin: 1rem;
+    text-align: center;
+  }
+  .contact-cover {
+    height: 85vh;
+  }
+}

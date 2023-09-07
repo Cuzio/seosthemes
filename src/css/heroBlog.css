@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.heroBlog-cover {
+  background-image: url("../images/garden.jpg");
+  height: 60vh;
+  text-align: center;
+  padding-top: 8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.heroBlog h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.heroBlog p {
+  font-size: 24px;
+}
+.heroBlog h1 ::after {
+  content: "";
+  animation: typing 1.5s;
+}
+@keyframes typing {
+  /* 100% {
+    left: 100%;
+    margin: 0 -35rem 0 35rem;
+  } */
+  from {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heroBlog h1 {
+    font-size: 40px;
+  }
+  .heroBlog p {
+    font-size: 20px;
+  }
+}
