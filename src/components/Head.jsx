@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { FiMail } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
 import { FaPhone } from "react-icons/fa";
@@ -6,8 +6,12 @@ import { FaSearch } from "react-icons/fa";
 import { BsFillCartFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import "../css/head.css";
+import { AppContext } from "../App";
 
 const Head = () => {
+  // const [move, setMove] = useState(0);
+  const { move } = useContext(AppContext);
+
   return (
     <div>
       <div className=" contain bg-drak d-md-flex justify-content-between align-items-center ">
@@ -36,7 +40,8 @@ const Head = () => {
             <button type="button" className="btn position-relative">
               <BsFillCartFill className="cart" />
               <span className="num position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0<span class="visually-hidden">unread messages</span>
+                {move}
+                <span class="visually-hidden">unread messages</span>
               </span>
             </button>
           </div>

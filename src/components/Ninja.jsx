@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ninja1 from "../images/ninja1.jpg";
 import ninja2 from "../images/ninja2.jpg";
 import { BsStarFill } from "react-icons/bs";
@@ -7,6 +7,7 @@ import "../css/ninja.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
+import { AppContext } from "../App";
 
 const Ninja = () => {
   useEffect(() => {
@@ -44,7 +45,9 @@ const Ninja = () => {
     firstNinja.style.opacity = "100%";
   };
 
+  const { move, setMove } = useContext(AppContext);
   const cart = () => {
+    setMove(click);
     if (click > 0) {
       setClick(0);
     }

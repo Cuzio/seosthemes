@@ -77,7 +77,7 @@
   margin: 2rem 0;
 }
 .review {
-  display: none;
+  display: block;
   /* border: 2px solid red; */
 }
 .review h1 {
