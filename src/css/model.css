@@ -35,6 +35,11 @@
   /* border: 2px solid red; */
   margin-top: 3rem;
 }
+.comos {
+  /* max-width: 200px; */
+  text-align: center;
+  font-family: "Sora", sans-serif;
+}
 .cont h2 {
   cursor: pointer;
   max-width: 200px;

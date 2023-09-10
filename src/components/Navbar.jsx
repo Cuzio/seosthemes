@@ -160,8 +160,8 @@ const Navbar = () => {
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/" className="dropdown-item" href="#">
-                      Action
+                    <Link to="/categories" className="dropdown-item" href="#">
+                      Comos
                     </Link>
                   </li>
                   <li>
