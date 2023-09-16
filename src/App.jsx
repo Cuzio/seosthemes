@@ -19,9 +19,9 @@ const App = () => {
 
   return (
     <div>
-      <div className="arrow text-white fs-1 fw-bolder d-flex justify-content-center align-items-center">
+      {/* <div className="arrow text-white fs-1 fw-bolder d-flex justify-content-center align-items-center">
         <FaCartArrowDown /> <h2 className="mx-2">Buy Now $49.99</h2>
-      </div>
+      </div> */}
       <AppContext.Provider value={{ move, setMove }}>
         <Head />
         <Router>

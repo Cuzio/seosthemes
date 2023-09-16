@@ -115,7 +115,7 @@ const Related = () => {
             <h4>PREMIUN QUALITY</h4>
           </div>
           <img
-            src={premium}
+            src={wooninja}
             alt=""
             className="new-products-image"
             onMouseEnter={woo2}
@@ -138,7 +138,7 @@ const Related = () => {
             <h4>PATIENT NINJA</h4>
           </div>
           <img
-            src={patient}
+            src={woologo}
             alt=""
             className="new-products-image"
             onMouseEnter={woo3}
